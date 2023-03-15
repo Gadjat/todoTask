@@ -35,7 +35,7 @@ function edit_task(task_id){
 function getDropdownStatusHtml(task_id){
     let status_id = "select_status_" + task_id;
     return "<label for='status'></label>"
-        + "<select id=" + status_id + "name='status'>"
+        + "<select id=" + status_id + " name='status'>"
         + "<option value='IN_PROGRESS'>IN_PROGRESS</option>"
         + "<option value='DONE'>DONE</option>"
         + "<option value='PAUSED'>PAUSED</option>"
