@@ -30,7 +30,7 @@ public class TaskController {
         pageSize = isNull(pageSize) ? 3 : pageSize;
         model.addAttribute("tasks", taskService.get(pageNumber-1, pageSize));
         model.addAttribute("currentPage", pageNumber);
-        Integer totalPage = (int)Math.ceil(1.0* taskService.getAllCount()/pageSize);
+        int totalPage = (int)Math.ceil(1.0* taskService.getAllCount()/pageSize);
         if(totalPage>1){
             List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPage).boxed().toList();
             model.addAttribute("pageNumbers", pageNumbers);
