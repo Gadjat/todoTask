@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/todo
+    username: root
+    password: rootroot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080
+  address: localhost
+
+
+logging:
+  level:
+    web: error
+  file:
+    name: app.log
+    path: /Users/ruslan/Documents/java_education/todoTask/app.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
