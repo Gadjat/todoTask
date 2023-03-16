@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>todo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1</version>
     <packaging>war</packaging>
     <name>todoTask</name>
     <description>todoTask</description>
@@ -77,6 +77,7 @@
     </dependencies>
 
     <build>
+        <finalName>todo</finalName>
         <plugins>
             <plugin>
             <groupId>org.apache.maven.plugins</groupId>
