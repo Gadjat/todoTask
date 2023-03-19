@@ -13,6 +13,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
@@ -32,7 +33,7 @@ public class TaskController {
         model.addAttribute("currentPage", pageNumber);
         int totalPage = (int)Math.ceil(1.0* taskService.getAllCount()/pageSize);
         if(totalPage>1){
-            List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPage).boxed().toList();
+            List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPage).boxed().collect(Collectors.toList());
             model.addAttribute("pageNumbers", pageNumbers);
         }
 
