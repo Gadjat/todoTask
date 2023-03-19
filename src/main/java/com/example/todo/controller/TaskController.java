@@ -5,8 +5,6 @@ import com.example.todo.exception.CustomException;
 import com.example.todo.exception.NotFoundException;
 import com.example.todo.service.TaskService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.MediaType;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
