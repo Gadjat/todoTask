@@ -1,3 +1,7 @@
-FROM tomcat
+FROM maven
 
-COPY /target/todo.war /usr/local/tomcat/webapps/
+WORKDIR /todo
+COPY . .
+RUN mvn clean package -DskipTests
+
+CMD mvn spring-boot:run
