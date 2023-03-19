@@ -18,6 +18,7 @@ import static java.util.Objects.isNull;
 
 @Controller
 @RequiredArgsConstructor
+@RequestMapping("/todo")
 public class TaskController {
     private final TaskService taskService;
 
