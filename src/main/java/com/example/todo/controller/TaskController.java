@@ -22,7 +22,7 @@ import static java.util.Objects.isNull;
 public class TaskController {
     private final TaskService taskService;
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "")
     public String tasks(Model model,
                          @RequestParam(required = false, defaultValue = "1") Integer pageNumber,
                          @RequestParam(required = false, defaultValue = "10") Integer pageSize){
