@@ -1,13 +1,12 @@
 spring:
   datasource:
-    url: jdbc:mysql://mysqldb:3307/todo
+    url: jdbc:mysql://mysqldb:3306/todo
     username: root
     password: rootroot
     driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 8080
-  address: localhost
-
+  address: 0.0.0.0
 
 logging:
   level:
