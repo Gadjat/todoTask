@@ -4,6 +4,8 @@ spring:
     username: root
     password: rootroot
     driver-class-name: com.mysql.cj.jdbc.Driver
+  liquibase:
+    change-log: db/changelog/changelog.sql
 server:
   port: 8080
   address: 0.0.0.0
