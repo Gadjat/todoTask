@@ -1,3 +1,4 @@
+#file: noinspection YAMLSchemaValidation
 databaseChangeLog:
 
   - changeSet:
@@ -22,7 +23,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: status
-                  type: int
+                  type: integer
                   constraints:
                     nullable: false
 
