@@ -32,7 +32,7 @@ services:
     volumes:
       - db:/var/lib/mysql
   app:
-    
+
     depends_on:
       - mysqldb
     build:
@@ -46,7 +46,7 @@ services:
         "spring.datasource.username" : "root",
         "spring.datasource.password" : "rootroot",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL8Dialect",
-        "spring.jpa.hibernate.ddl-auto" : "validate"
+        "spring.jpa.hibernate.ddl-auto" : "update"
       }'
     volumes:
       - .m2:/root/.m2
